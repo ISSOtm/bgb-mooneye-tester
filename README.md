@@ -9,6 +9,8 @@ A Python script that automatically runs mooneye-gb's tests on BGB.
 # Running
 First, get the Python script and INI file, and place them at the root of the folder where the ROMs are located. (The files should be alongside the `acceptance`, `emulator-only` etc. folders.) You should delete the `utils` folder.
 
+Then, create a `boot_roms` folder in BGB's folder, and inside, put the boot ROM that matches each system (`dmg0.bin`, `dmg.bin`, `mgb.bin`, `sgb.bin`, `sgb2.bin`, `cgb0.bin`, `cgb.bin`, `agb.bin`, `ags.bin`). (**Note: this doesn't seem to do anything, but running the DMG0 tests manually confirms that they work.**)
+
 Then, run `run_bgb_tests.py bgb_cmd`, where `bgb_cmd` is the command used to launch BGB. Then wait until all tests are run.
 
 ## Output
